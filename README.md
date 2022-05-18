@@ -1,8 +1,6 @@
-# etch-a-sketch
+# Etch-a-sketch
 
-I'm create this for The Odin Project.
-
-The instructions are here: https://www.theodinproject.com/lessons/foundations-etch-a-sketch#assignment.
+I'm create this for The Odin Project. The instructions are [here](https://www.theodinproject.com/lessons/foundations-etch-a-sketch#assignment).
 
 I have to:
 - [ ] Create a webpage with a 16x16 grid of square divs

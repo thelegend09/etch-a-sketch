@@ -1,0 +1,41 @@
+:root {
+    --blue-gray: #155263;
+    --vivid-orange: #ff6f3c;
+    --mellow-orange: #ff9a3c;
+    --yellow: #ffc93c;
+}
+
+
+body {
+    background-color: var(--yellow);
+    font-family: "Montserrat";
+}
+
+.grid-item {
+    background-color: var(--blue-gray);
+    color: var(--yellow);
+    height: 6.25vh;
+    width: 6.25vh;
+    margin: 0;
+    display: inline;
+
+}
+
+#grid-container {
+    max-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 32px 32px; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-item:hover {
+    background-color: var(--vivid-orange)
+}
+
+
+.selected {
+    background-color: var(--yellow)
+}
