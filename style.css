@@ -14,28 +14,114 @@ body {
 .grid-item {
     background-color: var(--blue-gray);
     color: var(--yellow);
-    height: 6.25vh;
-    width: 6.25vh;
+    height: 16px;
+    width: 16px;
     margin: 0;
     display: inline;
-
 }
 
-#grid-container {
-    max-height: 90vh;
+body #grid-container {
+    max-width: 600px;
+    max-height: 600px;
     display: flex;
     flex-wrap: wrap;
     /* grid-template-columns: 32px 32px; */
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 
 .grid-item:hover {
-    background-color: var(--vivid-orange)
+    background-color: var(--vivid-orange);
+}
+
+.colorItYellow {
+    background-color: var(--yellow);
+}
+
+.colorItBlue {
+    background-color: cyan;
+}
+
+.colorItRed {
+    background-color: red;
 }
 
 
-.selected {
-    background-color: var(--yellow)
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* background-color: white; */
+    padding: 25px;
+    text-align: center;
+}
+
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
